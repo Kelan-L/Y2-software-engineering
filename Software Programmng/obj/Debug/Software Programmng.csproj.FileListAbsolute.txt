@@ -1,0 +1,11 @@
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\bin\Debug\Software Programmng.exe.config
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\bin\Debug\Software Programmng.exe
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\bin\Debug\Software Programmng.pdb
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software Programmng.csprojResolveAssemblyReference.cache
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software_Programmng.Form1.resources
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software_Programmng.Form2.resources
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software_Programmng.Properties.Resources.resources
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software Programmng.csproj.GenerateResource.cache
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software Programmng.csproj.CoreCompileInputs.cache
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software Programmng.exe
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software Programmng.pdb
