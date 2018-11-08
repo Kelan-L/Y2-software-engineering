@@ -24,14 +24,12 @@ namespace Software_Programmng
 
         private void Submit_Click(object sender, EventArgs e)
         {
-            // This creates the data connection to the local Login table on the server
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C: \Users\King Brizzy\Documents\User Names and Passwords.mdf;Integrated Security=True;Connect Timeout=30;");
             SqlDataAdapter sda = new SqlDataAdapter("Select Count (*) From Login Table where User Names='" + textBox1.Text + "' and Password ='" + textBox2.Text + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows[0][1].ToString() == "2")
             {
-                // These statements prompts user for data from the Login Table so as to authorize access to the second page.
                 this.Hide();
                 Form2 ss = new Form2();
                 ss.Show();
