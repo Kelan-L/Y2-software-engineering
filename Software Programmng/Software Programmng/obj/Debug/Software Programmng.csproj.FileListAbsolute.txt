@@ -1,0 +1,24 @@
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\bin\Debug\Software Programmng.exe.config
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\bin\Debug\Software Programmng.exe
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\bin\Debug\Software Programmng.pdb
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software Programmng.csprojResolveAssemblyReference.cache
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software_Programmng.Form1.resources
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software_Programmng.Form2.resources
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software_Programmng.Properties.Resources.resources
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software Programmng.csproj.GenerateResource.cache
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software Programmng.csproj.CoreCompileInputs.cache
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software Programmng.exe
+C:\Users\King Brizzy\source\repos\Software Programmng\Software Programmng\obj\Debug\Software Programmng.pdb
+E:\Software Programmng\Software Programmng\bin\Debug\Database.mdf
+E:\Software Programmng\Software Programmng\bin\Debug\Database_log.ldf
+E:\Software Programmng\Software Programmng\bin\Debug\Software Programmng.exe.config
+E:\Software Programmng\Software Programmng\bin\Debug\Software Programmng.exe
+E:\Software Programmng\Software Programmng\bin\Debug\Software Programmng.pdb
+E:\Software Programmng\Software Programmng\obj\Debug\Software Programmng.csprojAssemblyReference.cache
+E:\Software Programmng\Software Programmng\obj\Debug\Software_Programmng.Form1.resources
+E:\Software Programmng\Software Programmng\obj\Debug\Software_Programmng.Form2.resources
+E:\Software Programmng\Software Programmng\obj\Debug\Software_Programmng.Properties.Resources.resources
+E:\Software Programmng\Software Programmng\obj\Debug\Software Programmng.csproj.GenerateResource.cache
+E:\Software Programmng\Software Programmng\obj\Debug\Software Programmng.csproj.CoreCompileInputs.cache
+E:\Software Programmng\Software Programmng\obj\Debug\Software Programmng.exe
+E:\Software Programmng\Software Programmng\obj\Debug\Software Programmng.pdb
