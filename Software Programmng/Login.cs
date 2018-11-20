@@ -38,8 +38,9 @@ namespace Software_Programmng
             da.Fill(dt);
             if (dt.Rows.Count > 0)
             {
+                //this.Close();
                 LandingPage obj1 = new LandingPage();
-                this.Close();
+
                 obj1.Show();
             }
             else

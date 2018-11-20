@@ -35,10 +35,9 @@ namespace Software_Programmng
         private void button1_Click(object sender, EventArgs e)
         {
 
-            var Login = (Login)Tag;
-            Login.Show();
-            //Close();
-            Console.ReadLine();
+            Crops obj2 = new Crops();
+
+            obj2.Show();
 
         }
 
