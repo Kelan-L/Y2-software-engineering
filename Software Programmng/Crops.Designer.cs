@@ -30,12 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.databaseDataSet = new Software_Programmng.DatabaseDataSet();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cropIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.growTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plantTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.harvestTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fertiliserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cropsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cropsTableAdapter = new Software_Programmng.DatabaseDataSetTableAdapters.CropsTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
+            this.croptabledata = new Software_Programmng.croptabledata();
+            this.cropsTableAdapter = new Software_Programmng.croptabledataTableAdapters.CropsTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cropsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.croptabledata)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -46,34 +52,64 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // tableLayoutPanel1
+            // dataGridView1
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.cropsBindingSource, "CropID", true));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(84, 60);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(617, 285);
-            this.tableLayoutPanel1.TabIndex = 1;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cropIDDataGridViewTextBoxColumn,
+            this.growTimeDataGridViewTextBoxColumn,
+            this.plantTimeDataGridViewTextBoxColumn,
+            this.harvestTimeDataGridViewTextBoxColumn,
+            this.fertiliserDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.cropsBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(122, 75);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(544, 159);
+            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // databaseDataSet
+            // cropIDDataGridViewTextBoxColumn
             // 
-            this.databaseDataSet.DataSetName = "DatabaseDataSet";
-            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.cropIDDataGridViewTextBoxColumn.DataPropertyName = "CropID";
+            this.cropIDDataGridViewTextBoxColumn.HeaderText = "CropID";
+            this.cropIDDataGridViewTextBoxColumn.Name = "cropIDDataGridViewTextBoxColumn";
+            // 
+            // growTimeDataGridViewTextBoxColumn
+            // 
+            this.growTimeDataGridViewTextBoxColumn.DataPropertyName = "GrowTime";
+            this.growTimeDataGridViewTextBoxColumn.HeaderText = "GrowTime";
+            this.growTimeDataGridViewTextBoxColumn.Name = "growTimeDataGridViewTextBoxColumn";
+            // 
+            // plantTimeDataGridViewTextBoxColumn
+            // 
+            this.plantTimeDataGridViewTextBoxColumn.DataPropertyName = "PlantTime";
+            this.plantTimeDataGridViewTextBoxColumn.HeaderText = "PlantTime";
+            this.plantTimeDataGridViewTextBoxColumn.Name = "plantTimeDataGridViewTextBoxColumn";
+            // 
+            // harvestTimeDataGridViewTextBoxColumn
+            // 
+            this.harvestTimeDataGridViewTextBoxColumn.DataPropertyName = "HarvestTime";
+            this.harvestTimeDataGridViewTextBoxColumn.HeaderText = "HarvestTime";
+            this.harvestTimeDataGridViewTextBoxColumn.Name = "harvestTimeDataGridViewTextBoxColumn";
+            // 
+            // fertiliserDataGridViewTextBoxColumn
+            // 
+            this.fertiliserDataGridViewTextBoxColumn.DataPropertyName = "Fertiliser";
+            this.fertiliserDataGridViewTextBoxColumn.HeaderText = "Fertiliser";
+            this.fertiliserDataGridViewTextBoxColumn.Name = "fertiliserDataGridViewTextBoxColumn";
             // 
             // cropsBindingSource
             // 
             this.cropsBindingSource.DataMember = "Crops";
-            this.cropsBindingSource.DataSource = this.databaseDataSet;
+            this.cropsBindingSource.DataSource = this.croptabledata;
+            // 
+            // croptabledata
+            // 
+            this.croptabledata.DataSetName = "croptabledata";
+            this.croptabledata.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cropsTableAdapter
             // 
@@ -84,13 +120,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Name = "Crops";
             this.Text = "Crops";
             this.Load += new System.EventHandler(this.Crops_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cropsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.croptabledata)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -98,9 +135,14 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private DatabaseDataSet databaseDataSet;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private croptabledata croptabledata;
         private System.Windows.Forms.BindingSource cropsBindingSource;
-        private DatabaseDataSetTableAdapters.CropsTableAdapter cropsTableAdapter;
+        private croptabledataTableAdapters.CropsTableAdapter cropsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cropIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn growTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plantTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn harvestTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fertiliserDataGridViewTextBoxColumn;
     }
 }

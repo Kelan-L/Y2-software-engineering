@@ -40,8 +40,9 @@ namespace Software_Programmng
             {
                 //this.Close();
                 LandingPage obj1 = new LandingPage();
-
-                obj1.Show();
+                this.Hide();
+                obj1.ShowDialog();
+                this.Show();
             }
             else
             {
