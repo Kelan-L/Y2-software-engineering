@@ -27,9 +27,6 @@ namespace Software_Programmng
         {
             // TODO: This line of code loads data into the 'croptabledata.Crops' table. You can move, or remove it, as needed.
             this.cropsTableAdapter.Fill(this.croptabledata.Crops);
-            // this stuff is meant to fill the rows in but currently it just breaks everything
-            //[System.ComponentModel.Browsable(false)]
-            //public System.Windows.Forms.DataGridViewRowCollection Rows { get; }
 
     }
 

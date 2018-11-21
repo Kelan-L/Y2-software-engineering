@@ -32,18 +32,50 @@ namespace Software_Programmng
 
         }
 
+
+
         private void button1_Click(object sender, EventArgs e)
         {
 
-            //Crops obj2 = new Crops();
-
-            //obj2.Show();
             Crops form2 = new Crops();
             
             this.Hide();
             form2.ShowDialog();
             this.Show();
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            Storage storagepage = new Storage();
+
+            this.Hide();
+            storagepage.ShowDialog();
+            this.Show();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            Timetable schedule = new Timetable();
+
+            this.Hide();
+            schedule.ShowDialog();
+            this.Show();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            Vehicles vehiclepage = new Vehicles();
+
+            this.Hide();
+            vehiclepage.ShowDialog();
+            this.Show();
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
