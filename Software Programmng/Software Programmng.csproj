@@ -66,6 +66,16 @@
     <Compile Include="Crops.Designer.cs">
       <DependentUpon>Crops.cs</DependentUpon>
     </Compile>
+    <Compile Include="CropsData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CropsData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="croptabledata.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>croptabledata.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -113,6 +123,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="CropsData.xsc">
+      <DependentUpon>CropsData.xsd</DependentUpon>
+    </None>
+    <None Include="CropsData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CropsData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CropsData.xss">
+      <DependentUpon>CropsData.xsd</DependentUpon>
+    </None>
+    <None Include="croptabledata.xsc">
+      <DependentUpon>croptabledata.xsd</DependentUpon>
+    </None>
+    <None Include="croptabledata.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>croptabledata.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="croptabledata.xss">
+      <DependentUpon>croptabledata.xsd</DependentUpon>
+    </None>
     <None Include="DatabaseDataSet.xsc">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>

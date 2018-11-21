@@ -35,10 +35,15 @@ namespace Software_Programmng
         private void button1_Click(object sender, EventArgs e)
         {
 
-            Crops obj2 = new Crops();
+            //Crops obj2 = new Crops();
 
-            obj2.Show();
-
+            //obj2.Show();
+            Crops form2 = new Crops();
+            
+            this.Hide();
+            form2.ShowDialog();
+            this.Show();
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
