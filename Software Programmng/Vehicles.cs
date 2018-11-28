@@ -19,13 +19,24 @@ namespace Software_Programmng
 
         private void Vehicles_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'databaseDataSet1.Tools' table. You can move, or remove it, as needed.
-            this.toolsTableAdapter.Fill(this.databaseDataSet1.Tools);
-            // TODO: This line of code loads data into the 'vehiclesDataSet.Vehicles' table. You can move, or remove it, as needed.
-            this.vehiclesTableAdapter.Fill(this.vehiclesDataSet.Vehicles);
+            // TODO: This line of code loads data into the 'toolsDataSet2.Tools' table. You can move, or remove it, as needed.
+            this.toolsTableAdapter.Fill(this.toolsDataSet2.Tools);
+            // TODO: This line of code loads data into the 'databaseDataSet1.Vehicles' table. You can move, or remove it, as needed.
+            this.vehiclesTableAdapter.Fill(this.databaseDataSet1.Vehicles);
 
         }
-        private void button3_Click(object sender, EventArgs e)
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
         }

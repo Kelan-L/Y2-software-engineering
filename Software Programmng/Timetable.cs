@@ -16,5 +16,10 @@ namespace Software_Programmng
         {
             InitializeComponent();
         }
+
+        private void Timetable_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
