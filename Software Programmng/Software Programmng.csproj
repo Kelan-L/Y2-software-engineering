@@ -86,6 +86,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,11 +126,21 @@
     <Compile Include="Storage.Designer.cs">
       <DependentUpon>Storage.cs</DependentUpon>
     </Compile>
+    <Compile Include="StorageDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StorageDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Timetable.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Timetable.Designer.cs">
       <DependentUpon>Timetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToolsDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="userID.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -127,11 +152,6 @@
     </Compile>
     <Compile Include="Vehicles.Designer.cs">
       <DependentUpon>Vehicles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="VehiclesDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VehiclesDataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Crops.resx">
       <DependentUpon>Crops.cs</DependentUpon>
@@ -151,6 +171,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Storage.resx">
+      <DependentUpon>Storage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timetable.resx">
+      <DependentUpon>Timetable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vehicles.resx">
       <DependentUpon>Vehicles.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +224,39 @@
     <None Include="DatabaseDataSet1.xss">
       <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="DatabaseDataSet2.xsc">
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet2.xss">
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet3.xsc">
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet3.xss">
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet4.xsc">
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet4.xss">
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </None>
     <None Include="password.xsc">
       <DependentUpon>password.xsd</DependentUpon>
     </None>
@@ -218,6 +277,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="StorageDataSet.xsc">
+      <DependentUpon>StorageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StorageDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StorageDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StorageDataSet.xss">
+      <DependentUpon>StorageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ToolsDataSet2.xsc">
+      <DependentUpon>ToolsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ToolsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ToolsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ToolsDataSet2.xss">
+      <DependentUpon>ToolsDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="userID.xsc">
       <DependentUpon>userID.xsd</DependentUpon>
     </None>
@@ -228,17 +309,6 @@
     </None>
     <None Include="userID.xss">
       <DependentUpon>userID.xsd</DependentUpon>
-    </None>
-    <None Include="VehiclesDataSet.xsc">
-      <DependentUpon>VehiclesDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="VehiclesDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VehiclesDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VehiclesDataSet.xss">
-      <DependentUpon>VehiclesDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
