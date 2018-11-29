@@ -16,5 +16,15 @@ namespace Software_Programmng
         {
             InitializeComponent();
         }
+
+        private void Timetable_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
     }
 }
