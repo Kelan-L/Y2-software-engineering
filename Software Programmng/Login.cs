@@ -19,11 +19,11 @@ namespace Software_Programmng
         {
             InitializeComponent();
         }
-       
+
         private void button1_Click(object sender, EventArgs e)
         {
 
-            
+
             con.Open();
             SqlDataAdapter cmd = new SqlDataAdapter("select userid,password,userlevel from [dbo].[Staff] where userid='" + user_name.Text + "'and password='" + passsword.Text + "'", con);
             DataTable dt = new DataTable();
@@ -31,10 +31,10 @@ namespace Software_Programmng
 
             try
             {
-                
+
                 if (dt.Rows.Count > 0)
                 {
-                    
+
                     switch (dt.Rows[0]["userlevel"] as string)
                     {
                         case "0":
@@ -50,7 +50,7 @@ namespace Software_Programmng
                             obj1.ShowDialog();
                             this.Show();
                             break;
-                        
+
                     }
                 }
                 else
@@ -75,19 +75,14 @@ namespace Software_Programmng
 
         }
 
-        private void button4_Click(object sender, EventArgs e) =>
-            //this closes the aplication once clicked
-            Application.Exit();
-
-
         private void Login_Load_1(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'password1.Staff' table. You can move, or remove it, as needed.
-            this.staffTableAdapter3.Fill(this.password1.Staff);
-            // TODO: This line of code loads data into the 'userID1.Staff' table. You can move, or remove it, as needed.
-            this.staffTableAdapter2.Fill(this.userID1.Staff);
 
         }
 
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
