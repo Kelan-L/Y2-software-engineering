@@ -12,43 +12,57 @@ namespace Software_Programmng
 {
     public partial class Login : Form
     {
+
+        SqlConnection con = new SqlConnection(Properties.Settings.Default.DatabaseConnectionString);
+
         public Login()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'userID.Staff' table. You can move, or remove it, as needed.
-            this.staffTableAdapter1.Fill(this.userID.Staff);
-            // TODO: This line of code loads data into the 'password.Staff' table. You can move, or remove it, as needed.
-            this.staffTableAdapter.Fill(this.password.Staff);
 
-        }
 
-        private void Submit_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(Properties.Settings.Default.DatabaseConnectionString);
             con.Open();
-            string userid = username.Text;
-            string password = passcode.Text;
-            SqlCommand cmd = new SqlCommand("select userid,password from Staff where userid='" + username.Text + "'and password='" + passcode.Text + "'", con); // grabs user and pword from dbase + user imput
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            SqlDataAdapter cmd = new SqlDataAdapter("select userid,password,userlevel from [dbo].[Staff] where userid='" + user_name.Text + "'and password='" + passsword.Text + "'", con);
             DataTable dt = new DataTable();
-            da.Fill(dt);
-            if (dt.Rows.Count > 0)
+            cmd.Fill(dt);
+
+            try
             {
-                //this.Close();
-                LandingPage obj1 = new LandingPage();
-                this.Hide();
-                obj1.ShowDialog();
-                this.Show();
+
+                if (dt.Rows.Count > 0)
+                {
+
+                    switch (dt.Rows[0]["userlevel"] as string)
+                    {
+                        case "0":
+                            ManagerLandingPage obj2 = new ManagerLandingPage();
+                            this.Hide();
+                            obj2.ShowDialog();
+                            this.Show();
+                            break;
+
+                        case "1":
+                            LandingPage obj1 = new LandingPage();
+                            this.Hide();
+                            obj1.ShowDialog();
+                            this.Show();
+                            break;
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid Username or Password");
+                MessageBox.Show(ex.Message);
+                con.Close();
             }
-            //con.Close();
         }
 
         private void Username(object sender, EventArgs e)
@@ -61,8 +75,14 @@ namespace Software_Programmng
 
         }
 
-        private void button2_Click(object sender, EventArgs e) =>
-            //this closes the aplication once clicked
+        private void Login_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
             Application.Exit();
+        }
     }
 }
