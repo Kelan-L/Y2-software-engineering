@@ -71,6 +71,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CropsData.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CropsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CropsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="croptabledata.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,6 +91,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseLoc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseLoc.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +128,29 @@
     <Compile Include="LandingPage.Designer.cs">
       <DependentUpon>LandingPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerCrops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerCrops.Designer.cs">
+      <DependentUpon>ManagerCrops.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerLandingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerLandingPage.Designer.cs">
+      <DependentUpon>ManagerLandingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManStorageData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManStorageData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManStoragePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManStoragePage.Designer.cs">
+      <DependentUpon>ManStoragePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="password.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,17 +158,54 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PWordDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PWordDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Storage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Storage.Designer.cs">
       <DependentUpon>Storage.cs</DependentUpon>
     </Compile>
+    <Compile Include="StorageDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StorageDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StorageDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StorageDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StorageUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StorageUpdate.Designer.cs">
+      <DependentUpon>StorageUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Timetable.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Timetable.Designer.cs">
       <DependentUpon>Timetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToolsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UNameDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UNameDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
     </Compile>
     <Compile Include="userID.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -128,11 +218,6 @@
     <Compile Include="Vehicles.Designer.cs">
       <DependentUpon>Vehicles.cs</DependentUpon>
     </Compile>
-    <Compile Include="VehiclesDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VehiclesDataSet.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Crops.resx">
       <DependentUpon>Crops.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +226,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LandingPage.resx">
       <DependentUpon>LandingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerCrops.resx">
+      <DependentUpon>ManagerCrops.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerLandingPage.resx">
+      <DependentUpon>ManagerLandingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManStoragePage.resx">
+      <DependentUpon>ManStoragePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -151,6 +245,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Storage.resx">
+      <DependentUpon>Storage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorageUpdate.resx">
+      <DependentUpon>StorageUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timetable.resx">
+      <DependentUpon>Timetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vehicles.resx">
       <DependentUpon>Vehicles.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +270,17 @@
     </None>
     <None Include="CropsData.xss">
       <DependentUpon>CropsData.xsd</DependentUpon>
+    </None>
+    <None Include="CropsDataSet.xsc">
+      <DependentUpon>CropsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CropsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CropsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CropsDataSet.xss">
+      <DependentUpon>CropsDataSet.xsd</DependentUpon>
     </None>
     <None Include="croptabledata.xsc">
       <DependentUpon>croptabledata.xsd</DependentUpon>
@@ -198,6 +315,72 @@
     <None Include="DatabaseDataSet1.xss">
       <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="DatabaseDataSet2.xsc">
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet2.xss">
+      <DependentUpon>DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet3.xsc">
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet3.xss">
+      <DependentUpon>DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet4.xsc">
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet4.xss">
+      <DependentUpon>DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet5.xsc">
+      <DependentUpon>DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet5.xss">
+      <DependentUpon>DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseLoc.xsc">
+      <DependentUpon>DatabaseLoc.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseLoc.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseLoc.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseLoc.xss">
+      <DependentUpon>DatabaseLoc.xsd</DependentUpon>
+    </None>
+    <None Include="ManStorageData.xsc">
+      <DependentUpon>ManStorageData.xsd</DependentUpon>
+    </None>
+    <None Include="ManStorageData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ManStorageData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ManStorageData.xss">
+      <DependentUpon>ManStorageData.xsd</DependentUpon>
+    </None>
     <None Include="password.xsc">
       <DependentUpon>password.xsd</DependentUpon>
     </None>
@@ -218,6 +401,61 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="PWordDataSet.xsc">
+      <DependentUpon>PWordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PWordDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PWordDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PWordDataSet.xss">
+      <DependentUpon>PWordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StorageDataSet.xsc">
+      <DependentUpon>StorageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StorageDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StorageDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StorageDataSet.xss">
+      <DependentUpon>StorageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StorageDataSet2.xsc">
+      <DependentUpon>StorageDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="StorageDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StorageDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StorageDataSet2.xss">
+      <DependentUpon>StorageDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ToolsDataSet2.xsc">
+      <DependentUpon>ToolsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ToolsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ToolsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ToolsDataSet2.xss">
+      <DependentUpon>ToolsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UNameDataSet.xsc">
+      <DependentUpon>UNameDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UNameDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UNameDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UNameDataSet.xss">
+      <DependentUpon>UNameDataSet.xsd</DependentUpon>
+    </None>
     <None Include="userID.xsc">
       <DependentUpon>userID.xsd</DependentUpon>
     </None>
@@ -228,17 +466,6 @@
     </None>
     <None Include="userID.xss">
       <DependentUpon>userID.xsd</DependentUpon>
-    </None>
-    <None Include="VehiclesDataSet.xsc">
-      <DependentUpon>VehiclesDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="VehiclesDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VehiclesDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VehiclesDataSet.xss">
-      <DependentUpon>VehiclesDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
